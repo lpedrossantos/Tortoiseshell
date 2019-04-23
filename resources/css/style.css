@@ -247,6 +247,7 @@ footer span{
   .exam, .custom, .delivery{
     margin-top: 1.54rem;
     font-size: 0.77rem;
+    margin-right: 0;
   }
   .info-flex{
     display: flex;
@@ -257,6 +258,7 @@ footer span{
   .info{
     width: 100%;
     margin-bottom: 4rem;
+    margin-right: 0;
   }
   .title{
     margin-bottom: 1rem;
