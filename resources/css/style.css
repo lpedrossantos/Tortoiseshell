@@ -204,6 +204,9 @@ footer span{
 }
 
 @media only screen and (max-width: 470px){
+  .container{
+    width: 100%;
+  }
   .nav{
     display: none;
   }
@@ -222,9 +225,12 @@ footer span{
   .banner{
     margin-top: 9rem;
     width: 100&;
+    margin-right: 0;
     padding: 1rem 0;
-    font-size: 1rem;
     text-align: center;
+  }
+  .banner h1{
+    font-size: 1rem;
   }
   main{
     margin-top: 3.77rem
