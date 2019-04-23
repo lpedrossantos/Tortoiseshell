@@ -1,0 +1,268 @@
+html{
+  font-size: 18px;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  line-height: 1.4;
+}
+  .container{
+    width: 960px;
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+
+/* Header Section */
+
+.main{
+  background-image: url("../../resources/images/glasses-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30rem;
+  padding-top: 1rem;
+}
+
+.flexheader{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: cadetblue;
+  padding: 1rem 2rem;
+}
+
+.logo{
+  display: flex;
+  align-items: center;
+}
+.logo img{
+  padding-right: 1rem;
+  height: 1.5rem;
+}
+
+.logo span{
+  font-size: 1rem;
+  color: white;
+  font-family: Helvetica;
+}
+
+
+.nav span{
+  color: white;
+  font-size: 1rem;
+  padding-right: 2rem;
+  font-family: Helvetica;
+}
+
+.phone-nav{
+  display: none;
+  color: white;
+}
+
+
+/* Banner Section */
+.flexbanner{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.banner{
+  background-color: white;
+  margin-top: 10rem;
+  padding: 1.5rem 5rem;
+  margin-right: -2rem;
+}
+
+.banner h1{
+  font-weight: bold;
+  line-height: 1.2rem;
+  font-size: 2rem;
+  font-family: Helvetica;
+}
+
+/* Main Section */
+main{
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.services{
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.exam, .custom, .delivery{
+  height: 8rem;
+  width: 5rem;
+  margin-right: 6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.exam img{
+  width: 3.5rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.custom img, .delivery img{
+  width: 5rem;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.exam p, .custom p, .delivery p{
+  font-size: 1rem;
+  line-height: 1.4;
+  font-family: Helvetica;
+  text-align: center;
+}
+
+/*Info Section */
+
+.info-flex{
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 35%;
+  margin-right: 5%;
+}
+
+.title{
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.5rem 1.25rem;
+  background-color: cadetblue;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.title h4{
+    width: 10rem;
+}
+.info p{
+  font-family: Helvetica;
+  font-size: 1rem;
+  text-align: left;
+  line-height: 1.4;
+}
+
+/* Footer Section */
+.footcontainer{
+  padding: 4rem;
+  background-color: azure;
+  width: 960px;
+  margin: 0 auto;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.logofoot{
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+footer span{
+  font-family: Helvetica;
+  font-size: 1rem;
+}
+
+/* MEDIA QUERIES for Tablet */
+@media only screen and (max-width: 1024px){
+.container{
+  width: 100&;
+}
+.main{
+  padding-top: 0;
+  height: 22rem;
+}
+.flexheader{
+  top: 0;
+}
+.banner{
+  padding: 0.75rem 4rem;
+  margin-right: 2rem;
+  font-size: 1.33rem;
+  margin-top: 5rem;
+}
+}
+
+@media only screen and (max-width: 470px){
+  .nav{
+    display: none;
+  }
+  .phone-nav{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .logo span{
+    display: none;
+  }
+
+  .main{
+    height: 17rem;
+  }
+  .banner{
+    margin-top: 9rem;
+    width: 100&;
+    padding: 1rem 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+  main{
+    margin-top: 3.77rem
+  }
+  .services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.77rem;
+  }
+
+  .exam, .custom, .delivery{
+    margin-top: 1.54rem;
+    font-size: 0.77rem;
+  }
+  .info-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .info{
+    width: 100%;
+    margin-bottom: 4rem;
+  }
+  .title{
+    margin-bottom: 1rem;
+  }
+  .info p{
+    font-size: 0.77rem;
+  }
+
+  .footcontainer{
+    width: 100%;
+    margin: 0 auto;
+  }
+  .footcontainer span{
+    display: none;
+  }
+}
