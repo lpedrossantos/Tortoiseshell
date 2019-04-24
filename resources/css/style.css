@@ -262,7 +262,13 @@ footer span{
   }
   .title{
     margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
+.title h4{
+  width: auto;
+}
   .info p{
     font-size: 0.77rem;
   }
@@ -270,6 +276,8 @@ footer span{
   .footcontainer{
     width: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: center;
   }
   .footcontainer span{
     display: none;
